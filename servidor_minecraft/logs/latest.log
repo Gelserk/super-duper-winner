@@ -1,17 +1,409 @@
-[23Jun2025 19:57:32.620] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 36.2.42, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, nogui]
-[23Jun2025 19:57:32.624] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 11.0.27 by Ubuntu
-[23Jun2025 19:57:32.897] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[23Jun2025 19:57:32.968] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/workspaces/super-duper-winner/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar Service=ModLauncher Env=SERVER
-[23Jun2025 19:57:33.384] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
-[23Jun2025 19:57:33.484] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
-[23Jun2025 19:57:33.493] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
-[23Jun2025 19:57:34.549] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, ., nogui]
-[23Jun2025 19:57:41.090] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
-[23Jun2025 19:57:41.113] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.42 Initialized
-[23Jun2025 19:57:41.698] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[23Jun2025 19:57:42.400] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 36.2.42 Target: null
-[23Jun2025 19:57:44.795] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[23Jun2025 19:57:44.860] [main/FATAL] [net.minecraft.server.Main/]: Failed to start the minecraft server
+[23Jun2025 20:08:08.241] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmlserver, --fml.forgeVersion, 36.2.42, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, nogui]
+[23Jun2025 20:08:08.244] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 11.0.27 by Ubuntu
+[23Jun2025 20:08:08.537] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[23Jun2025 20:08:08.596] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/workspaces/super-duper-winner/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar Service=ModLauncher Env=SERVER
+[23Jun2025 20:08:09.125] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23Jun2025 20:08:09.222] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23Jun2025 20:08:09.232] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23Jun2025 20:08:09.242] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23Jun2025 20:08:09.250] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23Jun2025 20:08:09.259] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23Jun2025 20:08:09.264] [main/INFO] [STDERR/]: [jdk.nashorn.api.scripting.NashornScriptEngine:<init>:143]: Warning: Nashorn engine is planned to be removed from a future JDK release
+[23Jun2025 20:08:10.495] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [vazkii.patchouli.common.MixinConnector]
+[23Jun2025 20:08:10.498] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmlserver' with arguments [--gameDir, ., nogui]
+[23Jun2025 20:08:17.433] [modloading-worker-1/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.42, for MC 1.16.5 with MCP 20210115.111550
+[23Jun2025 20:08:17.446] [modloading-worker-1/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.42 Initialized
+[23Jun2025 20:08:18.286] [modloading-worker-1/INFO] [twilightforest/]: Skipped compatibility for mod immersiveengineering.
+[23Jun2025 20:08:22.976] [main/INFO] [patchouli/]: Loaded book jsons on Thread[main,5,main] in 64 ms
+[23Jun2025 20:08:24.117] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /workspaces/super-duper-winner/servidor_minecraft/config/goblintraders-common.toml is not correct. Correcting
+[23Jun2025 20:08:24.123] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.123] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.124] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader.traderSpawnChance was corrected from null to its default, 25. 
+[23Jun2025 20:08:24.126] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader.traderSpawnDelay was corrected from null to its default, 24000. 
+[23Jun2025 20:08:24.128] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader.traderMinSpawnLevel was corrected from null to its default, 0. 
+[23Jun2025 20:08:24.129] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader.traderMaxSpawnLevel was corrected from null to its default, 63. 
+[23Jun2025 20:08:24.129] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader.restockDelay was corrected from null to its default, 48000. 
+[23Jun2025 20:08:24.132] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader.canAttackBack was corrected from null to its default, true. 
+[23Jun2025 20:08:24.132] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.goblin_trader.gruntNoiseInterval was corrected from null to its default, 80. 
+[23Jun2025 20:08:24.134] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.134] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader.traderSpawnChance was corrected from null to its default, 25. 
+[23Jun2025 20:08:24.136] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader.traderSpawnDelay was corrected from null to its default, 24000. 
+[23Jun2025 20:08:24.137] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader.traderMinSpawnLevel was corrected from null to its default, 0. 
+[23Jun2025 20:08:24.137] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader.traderMaxSpawnLevel was corrected from null to its default, 128. 
+[23Jun2025 20:08:24.139] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader.restockDelay was corrected from null to its default, 48000. 
+[23Jun2025 20:08:24.140] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader.canAttackBack was corrected from null to its default, true. 
+[23Jun2025 20:08:24.142] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.vein_goblin_trader.gruntNoiseInterval was corrected from null to its default, 80. 
+[23Jun2025 20:08:24.143] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.preventDespawnIfNamed was corrected from null to its default, true. 
+[23Jun2025 20:08:24.163] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /workspaces/super-duper-winner/servidor_minecraft/config/cgm-common.toml is not correct. Correcting
+[23Jun2025 20:08:24.163] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.164] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.164] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.enableGunGriefing was corrected from null to its default, true. 
+[23Jun2025 20:08:24.165] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.growBoundingBoxAmount was corrected from null to its default, 0.3. 
+[23Jun2025 20:08:24.166] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.enableHeadShots was corrected from null to its default, true. 
+[23Jun2025 20:08:24.168] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.headShotDamageMultiplier was corrected from null to its default, 1.25. 
+[23Jun2025 20:08:24.170] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.criticalDamageMultiplier was corrected from null to its default, 1.5. 
+[23Jun2025 20:08:24.171] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.ignoreLeaves was corrected from null to its default, true. 
+[23Jun2025 20:08:24.171] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.enableKnockback was corrected from null to its default, true. 
+[23Jun2025 20:08:24.172] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.knockbackStrength was corrected from null to its default, 0.15. 
+[23Jun2025 20:08:24.172] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.gameplay.improvedHitboxes was corrected from null to its default, false. 
+[23Jun2025 20:08:24.172] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.network was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.172] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.network.projectileTrackingRange was corrected from null to its default, 200.0. 
+[23Jun2025 20:08:24.176] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.aggro_mobs was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.176] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.aggro_mobs.enabled was corrected from null to its default, true. 
+[23Jun2025 20:08:24.177] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.aggro_mobs.angerHostileMobs was corrected from null to its default, true. 
+[23Jun2025 20:08:24.179] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.aggro_mobs.unsilencedRange was corrected from null to its default, 20.0. 
+[23Jun2025 20:08:24.181] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.aggro_mobs.exemptMobs was corrected from null to its default, []. 
+[23Jun2025 20:08:24.182] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.missiles was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.183] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.missiles.explosionRadius was corrected from null to its default, 5.0. 
+[23Jun2025 20:08:24.185] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.grenades was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.185] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.grenades.explosionRadius was corrected from null to its default, 5.0. 
+[23Jun2025 20:08:24.186] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.186] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.186] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.effect_criteria was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.186] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.effect_criteria.radius was corrected from null to its default, 15.0. 
+[23Jun2025 20:08:24.187] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.effect_criteria.durationMax was corrected from null to its default, 220. 
+[23Jun2025 20:08:24.189] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.effect_criteria.durationMin was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.190] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.effect_criteria.angleEffect was corrected from null to its default, 170.0. 
+[23Jun2025 20:08:24.191] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.effect_criteria.angleAttenuationMax was corrected from null to its default, 0.75. 
+[23Jun2025 20:08:24.192] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.effect_criteria.raytraceOpaqueBlocks was corrected from null to its default, true. 
+[23Jun2025 20:08:24.192] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.blind.blindMobs was corrected from null to its default, true. 
+[23Jun2025 20:08:24.193] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.194] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.effect_criteria was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.194] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.effect_criteria.radius was corrected from null to its default, 15.0. 
+[23Jun2025 20:08:24.195] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.effect_criteria.durationMax was corrected from null to its default, 280. 
+[23Jun2025 20:08:24.196] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.effect_criteria.durationMin was corrected from null to its default, 100. 
+[23Jun2025 20:08:24.196] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.effect_criteria.angleEffect was corrected from null to its default, 360.0. 
+[23Jun2025 20:08:24.196] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.effect_criteria.angleAttenuationMax was corrected from null to its default, 0.75. 
+[23Jun2025 20:08:24.196] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.effect_criteria.raytraceOpaqueBlocks was corrected from null to its default, false. 
+[23Jun2025 20:08:24.197] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.stun_grenades.deafen.panicMobs was corrected from null to its default, true. 
+[23Jun2025 20:08:24.197] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.projectile_spread was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.197] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.projectile_spread.spreadThreshold was corrected from null to its default, 300. 
+[23Jun2025 20:08:24.197] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key common.projectile_spread.maxCount was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.229] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /workspaces/super-duper-winner/servidor_minecraft/config/mowziesmobs-common.toml is not correct. Correcting
+[23Jun2025 20:08:24.232] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key general was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.234] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key general.freeze_blacklist was corrected from null to its default, [mowziesmobs:frostmaw, minecraft:enderdragon, minecraft:blaze, minecraft:magma_cube, minecraft:stray, minecraft:polar_bear, minecraft:snow_golem]. 
+[23Jun2025 20:08:24.237] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.240] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.geomancy_attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.240] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.suns_blessing was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.241] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.suns_blessing.suns_blessing_duration was corrected from null to its default, 60. 
+[23Jun2025 20:08:24.241] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.suns_blessing.suns_blessing_attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.241] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.suns_blessing.solar_beam_cost was corrected from null to its default, 5. 
+[23Jun2025 20:08:24.241] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.wrought_helm was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.241] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.wrought_helm.armor_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.242] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.wrought_helm.armor_config.damage_reduction was corrected from null to its default, 2. 
+[23Jun2025 20:08:24.242] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.wrought_helm.armor_config.toughness was corrected from null to its default, 0.0. 
+[23Jun2025 20:08:24.242] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.wrought_helm.breakable was corrected from null to its default, false. 
+[23Jun2025 20:08:24.242] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.axe_of_a_thousand_metals was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.242] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.axe_of_a_thousand_metals.tool_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.243] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.axe_of_a_thousand_metals.tool_config.attack_damage was corrected from null to its default, 9.0. 
+[23Jun2025 20:08:24.246] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.axe_of_a_thousand_metals.tool_config.attack_speed was corrected from null to its default, 0.8999999761581421. 
+[23Jun2025 20:08:24.247] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.axe_of_a_thousand_metals.breakable was corrected from null to its default, false. 
+[23Jun2025 20:08:24.248] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.sol_visage was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.249] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.sol_visage.armor_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.249] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.sol_visage.armor_config.damage_reduction was corrected from null to its default, 2. 
+[23Jun2025 20:08:24.251] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.sol_visage.armor_config.toughness was corrected from null to its default, 0.0. 
+[23Jun2025 20:08:24.252] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.sol_visage.breakable was corrected from null to its default, false. 
+[23Jun2025 20:08:24.253] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.ice_crystal was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.254] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.ice_crystal.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.255] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.ice_crystal.breakable was corrected from null to its default, false. 
+[23Jun2025 20:08:24.256] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.ice_crystal.durability was corrected from null to its default, 600. 
+[23Jun2025 20:08:24.258] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_mask was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.258] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_mask.armor_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.258] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_mask.armor_config.damage_reduction was corrected from null to its default, 1. 
+[23Jun2025 20:08:24.259] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_mask.armor_config.toughness was corrected from null to its default, 0.0. 
+[23Jun2025 20:08:24.260] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_spear was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.261] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_spear.tool_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.262] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_spear.tool_config.attack_damage was corrected from null to its default, 5.0. 
+[23Jun2025 20:08:24.263] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.barakoa_spear.tool_config.attack_speed was corrected from null to its default, 1.600000023841858. 
+[23Jun2025 20:08:24.263] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.naga_fang_dagger was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.263] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.naga_fang_dagger.tool_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.263] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.naga_fang_dagger.tool_config.attack_damage was corrected from null to its default, 3.0. 
+[23Jun2025 20:08:24.264] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.naga_fang_dagger.tool_config.attack_speed was corrected from null to its default, 2.0. 
+[23Jun2025 20:08:24.264] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.naga_fang_dagger.poison_duration was corrected from null to its default, 40. 
+[23Jun2025 20:08:24.264] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.naga_fang_dagger.backstab_damage_mult was corrected from null to its default, 2.0. 
+[23Jun2025 20:08:24.264] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.blowgun was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.264] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.blowgun.poison_duration was corrected from null to its default, 40. 
+[23Jun2025 20:08:24.264] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.blowgun.attack_damage was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.265] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.earthbore_gauntlet was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.265] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.earthbore_gauntlet.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.270] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.earthbore_gauntlet.breakable was corrected from null to its default, false. 
+[23Jun2025 20:08:24.271] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.earthbore_gauntlet.durability was corrected from null to its default, 400. 
+[23Jun2025 20:08:24.272] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.earthbore_gauntlet.tool_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.273] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.earthbore_gauntlet.tool_config.attack_damage was corrected from null to its default, 6.0. 
+[23Jun2025 20:08:24.274] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key tools_and_abilities.earthbore_gauntlet.tool_config.attack_speed was corrected from null to its default, 1.2000000476837158. 
+[23Jun2025 20:08:24.280] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.281] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.281] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.281] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.biome_config.biome_type was corrected from null to its default, [SNOWY,!OCEAN,!RIVER,!BEACH,!FOREST]. 
+[23Jun2025 20:08:24.283] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.biome_config.biome_whitelist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.285] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.288] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.generation_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.290] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.generation_config.generation_distance was corrected from null to its default, 25. 
+[23Jun2025 20:08:24.295] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.generation_config.generation_separation was corrected from null to its default, 8. 
+[23Jun2025 20:08:24.295] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.generation_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.296] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.generation_config.height_max was corrected from null to its default, 100.0. 
+[23Jun2025 20:08:24.296] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.generation_config.height_min was corrected from null to its default, 50.0. 
+[23Jun2025 20:08:24.296] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.generation_config.avoid_structures was corrected from null to its default, [minecraft:village, minecraft:pillager_outpost]. 
+[23Jun2025 20:08:24.298] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.301] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.305] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.305] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.has_boss_bar was corrected from null to its default, true. 
+[23Jun2025 20:08:24.305] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.heals_out_of_battle was corrected from null to its default, true. 
+[23Jun2025 20:08:24.306] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.frostmaw.stealable_ice_crystal was corrected from null to its default, true. 
+[23Jun2025 20:08:24.306] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.307] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.308] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.biome_config.biome_type was corrected from null to its default, [SAVANNA]. 
+[23Jun2025 20:08:24.310] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.biome_config.biome_whitelist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.311] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.314] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.generation_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.315] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.generation_config.generation_distance was corrected from null to its default, 25. 
+[23Jun2025 20:08:24.316] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.generation_config.generation_separation was corrected from null to its default, 8. 
+[23Jun2025 20:08:24.318] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.generation_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.320] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.generation_config.height_max was corrected from null to its default, 100.0. 
+[23Jun2025 20:08:24.321] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.generation_config.height_min was corrected from null to its default, 50.0. 
+[23Jun2025 20:08:24.325] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.generation_config.avoid_structures was corrected from null to its default, [minecraft:village, minecraft:pillager_outpost]. 
+[23Jun2025 20:08:24.325] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.325] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.325] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.326] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.has_boss_bar was corrected from null to its default, true. 
+[23Jun2025 20:08:24.328] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.heals_out_of_battle was corrected from null to its default, true. 
+[23Jun2025 20:08:24.329] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.trade_which_item was corrected from null to its default, minecraft:gold_block. 
+[23Jun2025 20:08:24.330] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barako.trade_how_many was corrected from null to its default, 7. 
+[23Jun2025 20:08:24.332] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.333] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.334] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.biome_config.biome_type was corrected from null to its default, [!OCEAN]. 
+[23Jun2025 20:08:24.335] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.biome_config.biome_whitelist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.338] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.338] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.generation_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.339] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.generation_config.generation_distance was corrected from null to its default, 15. 
+[23Jun2025 20:08:24.339] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.generation_config.generation_separation was corrected from null to its default, 5. 
+[23Jun2025 20:08:24.340] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.generation_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.341] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.generation_config.height_max was corrected from null to its default, 55.0. 
+[23Jun2025 20:08:24.343] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.generation_config.height_min was corrected from null to its default, 30.0. 
+[23Jun2025 20:08:24.346] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.generation_config.avoid_structures was corrected from null to its default, []. 
+[23Jun2025 20:08:24.348] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.348] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.348] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.349] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.has_boss_bar was corrected from null to its default, true. 
+[23Jun2025 20:08:24.349] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.ferrous_wroughtnaut.heals_out_of_battle was corrected from null to its default, true. 
+[23Jun2025 20:08:24.349] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.350] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.351] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.biome_config.biome_type was corrected from null to its default, [!MUSHROOM]. 
+[23Jun2025 20:08:24.353] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.biome_config.biome_whitelist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.355] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.358] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.358] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.spawn_rate was corrected from null to its default, 2. 
+[23Jun2025 20:08:24.358] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.min_group_size was corrected from null to its default, 1. 
+[23Jun2025 20:08:24.358] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.max_group_size was corrected from null to its default, 1. 
+[23Jun2025 20:08:24.359] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.extra_rarity was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.359] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.361] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.allowed_blocks was corrected from null to its default, []. 
+[23Jun2025 20:08:24.364] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.allowed_block_tags was corrected from null to its default, [minecraft:base_stone_overworld]. 
+[23Jun2025 20:08:24.365] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.height_max was corrected from null to its default, 25. 
+[23Jun2025 20:08:24.370] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.height_min was corrected from null to its default, -1. 
+[23Jun2025 20:08:24.370] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.needs_darkness was corrected from null to its default, true. 
+[23Jun2025 20:08:24.370] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.needs_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.371] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.needs_cant_see_sky was corrected from null to its default, true. 
+[23Jun2025 20:08:24.371] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.spawn_config.avoid_structures was corrected from null to its default, []. 
+[23Jun2025 20:08:24.371] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.371] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.371] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.grottol.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.372] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.380] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.380] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.biome_config.biome_type was corrected from null to its default, [FOREST,MAGICAL,!SNOWY]. 
+[23Jun2025 20:08:24.381] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.biome_config.biome_whitelist was corrected from null to its default, [minecraft:dark_forest, minecraft:dark_forest_hills]. 
+[23Jun2025 20:08:24.381] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.382] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.382] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.spawn_rate was corrected from null to its default, 5. 
+[23Jun2025 20:08:24.383] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.min_group_size was corrected from null to its default, 2. 
+[23Jun2025 20:08:24.383] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.max_group_size was corrected from null to its default, 4. 
+[23Jun2025 20:08:24.384] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.extra_rarity was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.389] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.390] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.allowed_blocks was corrected from null to its default, []. 
+[23Jun2025 20:08:24.392] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.allowed_block_tags was corrected from null to its default, [minecraft:valid_spawn, minecraft:leaves, minecraft:logs]. 
+[23Jun2025 20:08:24.394] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.height_max was corrected from null to its default, -1. 
+[23Jun2025 20:08:24.395] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.height_min was corrected from null to its default, 60. 
+[23Jun2025 20:08:24.398] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.needs_darkness was corrected from null to its default, true. 
+[23Jun2025 20:08:24.398] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.needs_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.398] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.needs_cant_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.399] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.spawn_config.avoid_structures was corrected from null to its default, []. 
+[23Jun2025 20:08:24.400] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.401] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.402] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.lantern.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.403] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.405] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.407] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.biome_config.biome_type was corrected from null to its default, [SAVANNA]. 
+[23Jun2025 20:08:24.407] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.biome_config.biome_whitelist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.408] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.408] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.409] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.spawn_rate was corrected from null to its default, 5. 
+[23Jun2025 20:08:24.410] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.min_group_size was corrected from null to its default, 1. 
+[23Jun2025 20:08:24.411] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.max_group_size was corrected from null to its default, 1. 
+[23Jun2025 20:08:24.413] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.extra_rarity was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.419] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.419] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.allowed_blocks was corrected from null to its default, []. 
+[23Jun2025 20:08:24.419] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.allowed_block_tags was corrected from null to its default, [minecraft:valid_spawn, minecraft:sand]. 
+[23Jun2025 20:08:24.420] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.height_max was corrected from null to its default, -1. 
+[23Jun2025 20:08:24.420] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.height_min was corrected from null to its default, 60. 
+[23Jun2025 20:08:24.420] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.needs_darkness was corrected from null to its default, false. 
+[23Jun2025 20:08:24.420] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.needs_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.420] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.needs_cant_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.420] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.spawn_config.avoid_structures was corrected from null to its default, [minecraft:village, minecraft:pillager_outpost, mowziesmobs:barakoa_village]. 
+[23Jun2025 20:08:24.421] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.422] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.423] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.barakoa.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.424] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.425] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.426] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.biome_config.biome_type was corrected from null to its default, [BEACH,MOUNTAIN, BEACH,HILLS]. 
+[23Jun2025 20:08:24.426] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.biome_config.biome_whitelist was corrected from null to its default, [minecraft:stone_shore]. 
+[23Jun2025 20:08:24.427] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.428] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.428] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.spawn_rate was corrected from null to its default, 15. 
+[23Jun2025 20:08:24.429] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.min_group_size was corrected from null to its default, 2. 
+[23Jun2025 20:08:24.429] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.max_group_size was corrected from null to its default, 4. 
+[23Jun2025 20:08:24.430] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.extra_rarity was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.431] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.432] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.allowed_blocks was corrected from null to its default, []. 
+[23Jun2025 20:08:24.433] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.allowed_block_tags was corrected from null to its default, []. 
+[23Jun2025 20:08:24.434] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.height_max was corrected from null to its default, -1. 
+[23Jun2025 20:08:24.434] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.height_min was corrected from null to its default, 70. 
+[23Jun2025 20:08:24.435] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.needs_darkness was corrected from null to its default, false. 
+[23Jun2025 20:08:24.436] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.needs_see_sky was corrected from null to its default, true. 
+[23Jun2025 20:08:24.436] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.needs_cant_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.437] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.spawn_config.avoid_structures was corrected from null to its default, [minecraft:village, minecraft:pillager_outpost]. 
+[23Jun2025 20:08:24.438] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.438] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.438] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.naga.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.442] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.442] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.biome_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.442] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.biome_config.biome_type was corrected from null to its default, [JUNGLE]. 
+[23Jun2025 20:08:24.443] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.biome_config.biome_whitelist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.443] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.biome_config.biome_blacklist was corrected from null to its default, []. 
+[23Jun2025 20:08:24.443] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.443] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.spawn_rate was corrected from null to its default, 70. 
+[23Jun2025 20:08:24.444] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.min_group_size was corrected from null to its default, 1. 
+[23Jun2025 20:08:24.444] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.max_group_size was corrected from null to its default, 4. 
+[23Jun2025 20:08:24.445] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.extra_rarity was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.446] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.dimensions was corrected from null to its default, [minecraft:overworld]. 
+[23Jun2025 20:08:24.447] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.allowed_blocks was corrected from null to its default, []. 
+[23Jun2025 20:08:24.448] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.allowed_block_tags was corrected from null to its default, [minecraft:valid_spawn, minecraft:leaves, minecraft:logs]. 
+[23Jun2025 20:08:24.450] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.height_max was corrected from null to its default, -1. 
+[23Jun2025 20:08:24.452] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.height_min was corrected from null to its default, 60. 
+[23Jun2025 20:08:24.453] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.needs_darkness was corrected from null to its default, false. 
+[23Jun2025 20:08:24.454] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.needs_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.456] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.needs_cant_see_sky was corrected from null to its default, false. 
+[23Jun2025 20:08:24.456] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.spawn_config.avoid_structures was corrected from null to its default, [minecraft:village, minecraft:pillager_outpost]. 
+[23Jun2025 20:08:24.460] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.combat_config was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.460] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.combat_config.health_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.460] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key mobs.foliaath.combat_config.attack_multiplier was corrected from null to its default, 1.0. 
+[23Jun2025 20:08:24.552] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file /workspaces/super-duper-winner/servidor_minecraft/config/twilightforest-common.toml is not correct. Correcting
+[23Jun2025 20:08:24.553] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.553] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.newPlayersSpawnInTF was corrected from null to its default, false. 
+[23Jun2025 20:08:24.553] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.skylightForest was corrected from null to its default, false. 
+[23Jun2025 20:08:24.553] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.skylightOaks was corrected from null to its default, true. 
+[23Jun2025 20:08:24.553] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.twilightDimensionID was corrected from null to its default, twilightforest:twilightforest. 
+[23Jun2025 20:08:24.553] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.553] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.stoneCircleWeight was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.554] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.wellWeight was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.554] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.stalagmiteWeight was corrected from null to its default, 12. 
+[23Jun2025 20:08:24.554] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.foundationWeight was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.554] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.monolithWeight was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.554] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.groveRuinsWeight was corrected from null to its default, 5. 
+[23Jun2025 20:08:24.554] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.hollowStumpWeight was corrected from null to its default, 12. 
+[23Jun2025 20:08:24.555] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.fallenHollowLogWeight was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.557] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.fallenSmallLogWeight was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.558] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.World-Gen Weights.druidHutWeight was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.559] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.Custom Hollow Hill Stalactites was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.560] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.Custom Hollow Hill Stalactites.largeHill was corrected from null to its default, []. 
+[23Jun2025 20:08:24.565] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.Custom Hollow Hill Stalactites.mediumHill was corrected from null to its default, []. 
+[23Jun2025 20:08:24.567] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.Custom Hollow Hill Stalactites.smallHill was corrected from null to its default, []. 
+[23Jun2025 20:08:24.568] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Dimension Settings.Custom Hollow Hill Stalactites.useConfigOnly was corrected from null to its default, false. 
+[23Jun2025 20:08:24.574] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key doCompat was corrected from null to its default, true. 
+[23Jun2025 20:08:24.577] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Performance Tweaks was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.577] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Performance Tweaks.canopyCoverage was corrected from null to its default, 1.7000000476837158. 
+[23Jun2025 20:08:24.578] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Performance Tweaks.twilightOakChance was corrected from null to its default, 48. 
+[23Jun2025 20:08:24.579] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Performance Tweaks.leavesLightOpacity was corrected from null to its default, 1. 
+[23Jun2025 20:08:24.579] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Performance Tweaks.glacierPackedIce was corrected from null to its default, false. 
+[23Jun2025 20:08:24.581] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Performance Tweaks.enableSkylight was corrected from null to its default, true. 
+[23Jun2025 20:08:24.585] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key originDimension was corrected from null to its default, minecraft:overworld. 
+[23Jun2025 20:08:24.589] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key allowPortalsInOtherDimensions was corrected from null to its default, false. 
+[23Jun2025 20:08:24.592] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key adminOnlyPortals was corrected from null to its default, false. 
+[23Jun2025 20:08:24.595] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key disablePortalCreation was corrected from null to its default, false. 
+[23Jun2025 20:08:24.596] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key checkPortalDestination was corrected from null to its default, false. 
+[23Jun2025 20:08:24.599] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key portalLightning was corrected from null to its default, false. 
+[23Jun2025 20:08:24.602] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key shouldReturnPortalBeUsable was corrected from null to its default, true. 
+[23Jun2025 20:08:24.604] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key progressionRuleDefault was corrected from null to its default, true. 
+[23Jun2025 20:08:24.607] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key disableUncrafting was corrected from null to its default, false. 
+[23Jun2025 20:08:24.609] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key uuid_locking was corrected from null to its default, false. 
+[23Jun2025 20:08:24.615] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Shield Parrying was corrected from null to its default, SimpleCommentedConfig:{}. 
+[23Jun2025 20:08:24.616] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Shield Parrying.parryNonTwilightAttacks was corrected from null to its default, false. 
+[23Jun2025 20:08:24.616] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Shield Parrying.shieldParryTicksArrow was corrected from null to its default, 40. 
+[23Jun2025 20:08:24.617] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Shield Parrying.shieldParryTicksFireball was corrected from null to its default, 40. 
+[23Jun2025 20:08:24.618] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Shield Parrying.shieldParryTicksThrowable was corrected from null to its default, 40. 
+[23Jun2025 20:08:24.618] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Shield Parrying.shieldParryTicksBeam was corrected from null to its default, 10. 
+[23Jun2025 20:08:24.639] [modloading-worker-2/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for goblintraders:goblin_trader, use EntityAttributeCreationEvent instead.
+[23Jun2025 20:08:24.640] [modloading-worker-2/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for goblintraders:vein_goblin_trader, use EntityAttributeCreationEvent instead.
+[23Jun2025 20:08:24.723] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [obfuscate] Starting version check at https://mrcrayfish.com/modupdatejson?id=obfuscate
+[23Jun2025 20:08:25.213] [main/WARN] [net.minecraftforge.common.ForgeHooks/]: Called deprecated GlobalEntityTypeAttributes#put for theabyss:ice_skeleton, use EntityAttributeCreationEvent instead.
+[23Jun2025 20:08:25.491] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://mrcrayfish.com/modupdatejson?id=obfuscate
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2017) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2012) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:2011) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1573) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1557) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:163) ~[forge:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:187) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:128) [forge:?]
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://mrcrayfish.com/modupdatejson?id=obfuscate
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1961) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1557) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:145) ~[forge:?]
+	... 3 more
+[23Jun2025 20:08:25.496] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [goblintraders] Starting version check at https://mrcrayfish.com/modupdatejson?id=goblintraders
+[23Jun2025 20:08:25.550] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+java.io.IOException: Server returned HTTP response code: 403 for URL: https://mrcrayfish.com/modupdatejson?id=goblintraders
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:490) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2017) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:2012) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:2011) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1573) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1557) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:250) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:163) ~[forge:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:187) ~[forge:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) [?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:128) [forge:?]
+Caused by: java.io.IOException: Server returned HTTP response code: 403 for URL: https://mrcrayfish.com/modupdatejson?id=goblintraders
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1961) ~[?:?]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1557) ~[?:?]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527) ~[?:?]
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:334) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.openUrlString(VersionChecker.java:145) ~[forge:?]
+	... 3 more
+[23Jun2025 20:08:25.555] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[23Jun2025 20:08:25.835] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 36.2.42 Target: null
+[23Jun2025 20:08:25.837] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cgm] Starting version check at https://raw.githubusercontent.com/MrCrayfish/ModUpdates/master/cgm/update.json
+[23Jun2025 20:08:25.876] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cgm] Found status: BETA Current: 1.2.6 Target: null
+[23Jun2025 20:08:25.885] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [twilightforest] Starting version check at https://raw.githubusercontent.com/TeamTwilight/twilightforest/1.16.x/update.json
+[23Jun2025 20:08:25.912] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [twilightforest] Found status: BETA Current: NONE Target: null
+[23Jun2025 20:08:28.999] [main/ERROR] [net.minecraft.util.registry.WorldSettingsImport/]: Error adding element: Unknown registry element com.croparia.mod.world.feature.CoalCropFeature@469bac8d
+[23Jun2025 20:08:29.000] [main/ERROR] [net.minecraft.util.registry.WorldSettingsImport/]: Error adding element: Unknown registry element com.croparia.mod.world.feature.FruitsFeature@34c56692
+[23Jun2025 20:08:30.233] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[23Jun2025 20:08:30.933] [main/FATAL] [net.minecraft.server.Main/]: Failed to start the minecraft server
 net.minecraft.server.SessionLockManager$AlreadyLockedException: /workspaces/super-duper-winner/servidor_minecraft/./world/session.lock: already locked (possibly by other Minecraft instance?)
 	at net.minecraft.server.SessionLockManager$AlreadyLockedException.func_233000_a_(SourceFile:98) ~[?:?]
 	at net.minecraft.server.SessionLockManager.func_232998_a_(SourceFile:44) ~[?:?]
